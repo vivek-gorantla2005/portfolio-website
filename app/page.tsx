@@ -15,14 +15,21 @@ import { TypewriterEffect } from "./components/ui/typewriter-effect";
 import { GlowingEffectDemoSecond } from "./components/ui/glowingEffect2";
 import { FeaturesSectionDemo } from "./components/ui/features-section";
 import { DraggableCardDemo } from "./components/ui/draggable-card-demo";
-import { WobbleCardDemo } from "./components/ui/wobble-card-demo";
 import { BackgroundLinesDemo } from "./components/ui/backgroundLinesDemo";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 import { BackgroundBoxesDemo } from "./components/ui/thankyou";
 import PortfolioNavbar from "./components/ui/portfolio-navbar";
 import { TracingBeam } from "./components/ui/tracing-beam";
+import Loader from "./components/ui/loader";
+import { useState,useEffect } from "react";
 
 export default function Home() {
+  const [isHydrated, setIsHydrated] = useState(false);
+  useEffect(() => {
+    setIsHydrated(true); 
+  }, []);
+  if (!isHydrated) return <Loader />;
+  
   const words = ["Full-Stack Developer", "System Designer", "Tech Enthusiast", "AI Builder"];
 
   const journeyData = [
