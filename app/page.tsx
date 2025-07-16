@@ -75,10 +75,6 @@ export default function Home() {
 
   return (
     <>
-      <section>
-        <PortfolioNavbar />
-      </section>
-
       <TracingBeam>
         <div>
           {/* Hero Section */}
