@@ -29,7 +29,7 @@ export default function Home() {
     setIsHydrated(true); 
   }, []);
   if (!isHydrated) return <Loader />;
-  
+
   const words = ["Full-Stack Developer", "System Designer", "Tech Enthusiast", "AI Builder"];
 
   const journeyData = [
@@ -342,12 +342,12 @@ export default function Home() {
           </section>
 
           {/* Hobbies section */}
-          <section className="relative py-20 bg-white dark:bg-black">
+          <section className="relative py-20 bg-black">
             <div className="max-w-7xl mx-auto px-4 text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white">
                 Upcoming Projects
               </h2>
-              <p className="mt-2 text-gray-600 dark:text-gray-400 text-base sm:text-lg">
+              <p className="mt-2 text-gray-400 text-base sm:text-lg">
                 A glimpse into what I'm building next — stay tuned!
               </p>
             </div>

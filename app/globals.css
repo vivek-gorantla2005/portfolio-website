@@ -3,7 +3,7 @@
 /* 💡 Force dark mode variables directly */
 :root {
   --background: #0a0a0a;      /* Forced dark background */
-  --foreground: #ededed;      /* Forced dark text */
+  --foreground: #ededed;     
 }
 
 @theme inline {
