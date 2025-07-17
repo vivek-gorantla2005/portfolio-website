@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     <>
-      <TracingBeam>
+      <TracingBeam className="hidden sm:block" />
         <div>
           {/* Hero Section */}
           <div className="relative w-full h-screen overflow-hidden bg-black text-white font-sans">
